@@ -1,0 +1,83 @@
+.food-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.food-image-container {
+  position: relative;
+  width: 100%;
+}
+.food-item:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.food-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.food-details h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.food-details p {
+  font-size: 14px;
+  color: #666;
+}
+
+.food-price {
+  font-weight: bold;
+  color: red;
+  margin: 10px 0;
+}
+
+.cart-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-controls button {
+  background-color: orangered;
+  color: white;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 50px;
+}
+
+.cart-controls button:disabled {
+  background-color: #ccc;
+}
+
+.cart-controls span {
+  font-size: 16px;
+}
+
+.review-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  background-color: rgba(211, 47, 47, 0.8);
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 30px;
+  height: 30px;
+}
+
+.review-icon:hover {
+  transform: scale(1.1);
+  background-color: rgba(211, 47, 47, 1);
+}

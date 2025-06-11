@@ -1,0 +1,65 @@
+/* Container for the entire page */
+.reports-page-container {
+  padding: 40px 20px;
+  background-color: black;
+  min-height: 100vh;
+  text-align: center;
+  margin-left: 200px;
+}
+
+/* Page title */
+.reports-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Subtitle text */
+.reports-subtitle {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Wrapper for all report cards */
+.reports-buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Each report card box */
+.report-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Icon styles */
+.report-icon {
+  font-size: 2.5rem;
+  color: orangered;
+  margin-bottom: 10px;
+}
+
+/* Headings inside cards */
+.report-card h3 {
+  margin: 10px 0;
+  color: #343a40;
+}
+
+/* Description inside cards */
+.report-card p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,38 @@
+/* Location.css */
+
+.L-header {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.L-header h5 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.Location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Location iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 450px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Location iframe {
+    height: 300px;
+  }
+}

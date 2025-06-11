@@ -1,0 +1,145 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* reduced padding */
+  background-color: #171717;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo */
+.logo {
+  height: 60px; /* reduced from 200px */
+  object-fit: contain;
+}
+
+/* Menu Items */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* reduced gap */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-menu li a:hover,
+.navbar-menu li a.active {
+  color: #ff7043;
+}
+
+.navbar-menu li a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ff7043;
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* reduced gap */
+}
+
+/* React Icons */
+.react-icon {
+  font-size: 34px; /* slightly smaller */
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.icon-link {
+  position: relative;
+}
+
+.icon-link:hover .react-icon {
+  color: #ff7043;
+}
+
+/* Cart Dot */
+.dot {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  height: 10px;
+  width: 10px;
+  background-color: #ff7043;
+  border-radius: 50%;
+}
+
+/* Login Button */
+button {
+  background-color: #ff7043;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px; /* reduced padding */
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e65c2e;
+}
+
+/* Profile Icon */
+.navbar-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 36px;
+}
+
+/* Dropdown */
+.nav-profile-dropdown {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+  display: flex;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.dropdown-link:hover {
+  color: #ff7043;
+}
+
+

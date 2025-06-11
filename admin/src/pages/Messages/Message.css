@@ -1,0 +1,270 @@
+/* Message.css for dark theme - Table Layout */
+
+.admin-messages-container {
+  background-color: #121212; /* Deep dark background */
+  color: #e0e0e0; /* Soft white for general text */
+  padding: 30px;
+  font-family: 'Inter', sans-serif; /* Modern sans-serif font */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between heading and table */
+  margin-left: 180px;
+}
+
+.messages-heading {
+  color: #8855ff; /* A rich, deep purple for the heading */
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.no-messages-found {
+  color: #ccc;
+  font-size: 1.2em;
+  margin-top: 50px;
+}
+
+.messages-table-wrapper {
+  width: 100%;
+  max-width: 1200px; /* Max width for larger screens */
+  overflow-x: auto; /* Enables horizontal scrolling for tables on small screens */
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+
+.messages-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1a1a1a; /* Even darker background for table */
+  min-width: 700px; /* Ensures table doesn't get too squished */
+}
+
+.messages-table th,
+.messages-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333333; /* Softer, darker border */
+}
+
+.messages-table th {
+  background-color: #2c2c2c; /* Slightly darker header background */
+  color: white; /* Vibrant green for table headers */
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+.messages-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.messages-table tbody tr:nth-child(even) {
+  background-color: #202020; /* Slightly different shade for even rows */
+}
+
+.messages-table tbody tr:hover {
+  background-color: #333333; /* Clearer hover effect for rows */
+}
+
+.messages-table tbody td {
+  color: #ccc; /* Lighter text for table data */
+  font-size: 0.9em;
+}
+
+.messages-table tbody tr:last-child td {
+  border-bottom: none; /* No border for the last row's cells */
+}
+
+.messages-table .no-reply-text {
+  font-style: italic;
+  color: #999;
+}
+
+/* Actions Cell */
+.actions-cell {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 8px;
+  justify-content: center;
+  align-items: flex-start; /* Align buttons to the start */
+  min-width: 120px; /* Ensure enough space for buttons */
+}
+
+.actions-cell button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  width: 100%; /* Make buttons full width within the cell */
+  text-align: center;
+}
+
+.reply-btn {
+  background-color: #8855ff; /* Purple for reply button */
+  color: white;
+}
+
+.reply-btn:hover {
+  background-color: #7a4be0;
+  transform: translateY(-1px);
+}
+
+.send-reply-btn {
+  background-color: #00e676; /* Green for send reply button */
+  color: #121212;
+}
+
+.send-reply-btn:hover {
+  background-color: #00cc66;
+  transform: translateY(-1px);
+}
+
+.cancel-reply-btn {
+  background-color: #555; /* Gray for cancel button */
+  color: white;
+}
+
+.cancel-reply-btn:hover {
+  background-color: #444;
+  transform: translateY(-1px);
+}
+
+.delete-btn {
+  background-color: #ff3d00; /* Red for delete button */
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #cc3300;
+  transform: translateY(-1px);
+}
+
+/* Reply Textarea within the table */
+.reply-row td {
+  background-color: #262626 !important; /* A slightly different shade for the reply row */
+  padding: 15px;
+  border-top: 1px solid #424242;
+  border-bottom: 1px solid #424242;
+}
+
+.reply-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #424242;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-size: 0.95em;
+  resize: vertical;
+  min-height: 80px;
+  box-sizing: border-box;
+}
+
+.reply-textarea::placeholder {
+  color: #999;
+}
+
+/* Responsive Table Adjustments */
+@media (max-width: 768px) {
+  .admin-messages-container {
+    padding: 20px 15px;
+  }
+
+  .messages-heading {
+    font-size: 2em;
+  }
+
+  .messages-table-wrapper {
+    box-shadow: none; /* Remove shadow on small screens */
+    border-radius: 0;
+  }
+
+  .messages-table {
+    min-width: unset; /* Remove min-width for full flexibility */
+    border: 0;
+  }
+
+  .messages-table thead {
+    display: none; /* Hide header on small screens */
+  }
+
+  .messages-table tbody tr {
+    margin-bottom: 15px;
+    display: block;
+    border: 1px solid #424242; /* Add border to individual rows */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .messages-table td {
+    display: block;
+    text-align: right;
+    padding: 10px 15px;
+    border-bottom: 1px dashed #424242; /* Dashed border for visual separation */
+    position: relative;
+  }
+
+  .messages-table td:last-child {
+    border-bottom: none;
+  }
+
+  /* Add data-label for content before actual data for mobile readability */
+  .messages-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 45%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+    color: #00e676; /* Teal for labels */
+  }
+
+  .actions-cell {
+    flex-direction: row; /* Display buttons horizontally on mobile */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 15px; /* Adjust padding */
+    border-top: 1px dashed #424242; /* Add border above actions */
+    text-align: center; /* Center buttons within the cell */
+  }
+
+  .actions-cell button {
+    width: auto; /* Auto width for horizontal buttons */
+    flex-grow: 1; /* Allow buttons to grow */
+    max-width: 48%; /* Limit width for two buttons per row */
+  }
+
+  .reply-actions {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .reply-actions button {
+    flex-grow: 1;
+  }
+
+  .reply-row td {
+    border-bottom: none; /* Remove bottom border for reply row */
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .actions-cell button {
+    max-width: 100%; /* Stack buttons on very small screens */
+  }
+  .reply-actions {
+    flex-direction: column; /* Stack reply buttons on very small screens */
+  }
+}

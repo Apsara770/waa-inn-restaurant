@@ -1,0 +1,90 @@
+
+.about-us {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.about-us h1 {
+  color: #bb86fc;
+  margin-bottom: 15px;
+}
+
+.about-us p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.about-us strong {
+  color: white;
+}
+
+.about-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-us li {
+  margin-bottom: 10px;
+}
+
+.intro,
+.mission,
+.values,
+.team,
+.cta {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cta-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cta-title h2 {
+  color: #bb86fc;
+}
+
+.cta-title p {
+  color: #ccc;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feature .icon {
+  font-size: 2em;
+  color: orangered;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  color: black;
+  margin-bottom: 5px;
+}
+
+.feature h6 {
+  color: black;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+
+

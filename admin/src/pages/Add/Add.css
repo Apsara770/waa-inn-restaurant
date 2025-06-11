@@ -1,0 +1,134 @@
+/* Add.css (Dark Theme - Small Form) */
+.add {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 420px; /* Small form width */
+  margin: 40px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', sans-serif;
+  margin-left: 500px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Image upload section */
+.add-img-upload {
+  align-items: center;
+}
+
+.add-img-upload p {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: #ccc;
+}
+
+.add-img-upload label {
+  display: block;
+  border: 2px dashed #555;
+  border-radius: 6px;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-color: #2a2a2a;
+}
+
+.add-img-upload label:hover {
+  border-color: #888;
+}
+
+.add-img-upload img {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Text and input labels */
+
+.add-category p,
+.add-price p {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #ccc;
+}
+
+/* Inputs and textarea */
+.add-product-name input,
+.add-product-description textarea,
+.add-category select,
+.add-price input,
+.add-product-quantity input {
+  background-color: #333;
+  color: #f0f0f0;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.add-product-name input:focus,
+.add-product-description textarea:focus,
+.add-category select:focus,
+.add-price input:focus,
+.add-product-quantity input:focus {
+  outline: none;
+  border-color: #888;
+  box-shadow: 0 0 4px rgba(136, 136, 136, 0.4);
+}
+
+.add-product-description textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+/* Category and price layout */
+.add-category-price {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.add-category,
+.add-price {
+  flex: 1;
+}
+
+/* Submit button */
+.add-button {
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.add-button:hover {
+  background-color: #d84315;
+}
+
+.add-button:focus {
+  outline: none;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .add {
+    max-width: 90%;
+    padding: 0.8rem;
+  }
+
+  .add-category-price {
+    flex-direction: column;
+  }
+}

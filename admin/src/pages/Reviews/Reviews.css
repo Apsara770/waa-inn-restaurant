@@ -1,0 +1,149 @@
+/* Reviews.css for dark theme */
+
+.admin-review-container {
+  background-color: #121212; /* Deep dark background */
+  color: #e0e0e0; /* Soft white for general text */
+  padding: 30px;
+  font-family: 'Inter', sans-serif; /* Modern sans-serif font */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between sections if any are added */
+  margin-left: 180px;
+}
+
+.review-table {
+  width: 100%;
+  max-width: 1200px; /* Max width for larger screens */
+  border-collapse: collapse;
+  background-color: #1a1a1a; /* Even darker background for the table */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* More pronounced shadow */
+  overflow: hidden; /* Ensures rounded corners are respected */
+  border: 1px solid #2c2c2c; /* Subtle outline */
+}
+
+.review-table thead tr {
+  background-color: #2c2c2c; /* Slightly darker header background */
+}
+
+.review-table th,
+.review-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333333; /* Darker separator line */
+}
+
+.review-table th {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+.review-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.review-table tbody tr:nth-child(even) {
+  background-color: #202020; /* Slightly different shade for even rows */
+}
+
+.review-table tbody tr:hover {
+  background-color: #333333; /* Clearer hover effect for rows */
+}
+
+.review-table td {
+  color: #ccc; /* Lighter text for data */
+  font-size: 0.95em;
+}
+
+
+/* Delete Button */
+.delete-button {
+  cursor: pointer;
+  color: #ff3d00; /* Red for the delete action */
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: transparent; /* Transparent background by default */
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+  display: inline-block; /* Allows padding and centering */
+  text-align: center;
+}
+
+.delete-button:hover {
+  color: white; /* White text on hover */
+  background-color: #cc3300; /* Darker red background on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* No reviews message */
+.review-table tbody tr:last-child td[colspan="6"] {
+  text-align: center;
+  font-style: italic;
+  color: #999;
+  padding: 20px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .admin-review-container {
+    padding: 20px 15px;
+  }
+
+  .review-table {
+    box-shadow: none; /* Remove shadow on small screens */
+    border-radius: 0;
+  }
+
+  .review-table thead {
+    display: none; /* Hide header on small screens */
+  }
+
+  .review-table,
+  .review-table tbody,
+  .review-table tr,
+  .review-table td {
+    display: block; /* Stack elements */
+    width: 100%; /* Take full width */
+  }
+
+  .review-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #424242; /* Add border to individual rows */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .review-table td {
+    text-align: right; /* Align data to the right */
+    padding: 10px 15px;
+    border-bottom: 1px dashed #424242; /* Dashed border for visual separation */
+    position: relative;
+  }
+
+  .review-table td:last-child {
+    border-bottom: none; /* No border for the last cell in a stacked row */
+    text-align: center; /* Center the delete button */
+  }
+
+  /* Add data-label for content before actual data for mobile readability */
+  .review-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 45%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+
+  }
+
+
+
+}

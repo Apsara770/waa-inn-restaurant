@@ -1,0 +1,23 @@
+/* === Report Download Buttons === */
+.download-button {
+  background-color: orangered;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.download-button:hover {
+  background-color: orange;
+  transform: translateY(-2px);
+}
+
+.download-button:active {
+  background-color: orange;
+  transform: scale(0.97);
+}
