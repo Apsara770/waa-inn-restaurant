@@ -43,7 +43,7 @@ export const generateSalesReport = async (req, res) => {
     doc.pipe(res);
 
     // Add report title and summary
-    doc.fontSize(20).text('Waa Inn - Sales Report', { align: 'center' });
+    doc.fontSize(20).text('Waa Inn Family Restaurant - Sales Report', { align: 'center' });
     doc.moveDown();
     doc.fontSize(14).text(`Total Revenue: Rs. ${totalRevenue.toFixed(2)}`);
     doc.moveDown();
@@ -89,7 +89,7 @@ export const generateOrdersReport = async (req, res) => {
     doc.pipe(res);
 
     // Add report title and total orders summary
-    doc.fontSize(20).text('Waa Inn - Orders Report', { align: 'center' });
+    doc.fontSize(20).text('Waa Inn Family Restaurant - Orders Report', { align: 'center' });
     doc.moveDown();
     doc.fontSize(14).text(`Total Orders: ${totalOrders}`);
     doc.moveDown();
@@ -155,7 +155,7 @@ export const generateFoodPerformanceReport = async (req, res) => {
     doc.pipe(res);
 
     // Add report title
-    doc.fontSize(20).text('Waa Inn - Food Performance Report', { align: 'center' });
+    doc.fontSize(20).text('Waa Inn Family Restaurant - Food Performance Report', { align: 'center' });
     doc.moveDown();
 
     // List most ordered items
