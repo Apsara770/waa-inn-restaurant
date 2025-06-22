@@ -57,15 +57,15 @@ Waa Inn/
  2. Install Dependencies
 
 # Install frontend dependencies
-cd frondend
+cd frondend &
 npm install
 
 # Install admin dependencies
-cd admin
+cd admin &
 npm install
 
 # Install backend dependencies
-cd backend
+cd backend &
 npm install
 
 
@@ -86,16 +86,16 @@ EMAIL_PASS=your_email_password
 
 
 # Run backend server
-cd backend
+cd backend &
 npm run server
 
 # In a separate terminal, run frontend
-cd frondend
+cd frondend &
 npm run dev
 (port no:5173)
 
 # In a separate terminal, Run admin
-cd admin
+cd admin &
 npm run dev
 (port no:5174)
 
