@@ -25,26 +25,6 @@ Tech Stack
 | Email       | Nodemailer(SendInvoice ,order confirmation email)   |
 | PDF Creation| PDFKit (Invoice and report generation)              |
       
- 
- Project Structure
- 
-Waa Inn/
-│
-├── frondend/           # React frontend
-|
-├── backend/            # Node.js backend API
-│   ├── routes/
-│   ├── controllers/
-│   ├── models/
-│   ├── config/
-│   ├── utils/
-│   └── invoices/
-|
-├── admin/              # Admin panel (React or template)
-|
-├── .env                # Environment variables (excluded)
-|
-├── README.md
 
 
  Getting Started
