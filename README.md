@@ -75,15 +75,14 @@ Create a `.env` file in `backend/` folder:
 
  add to env
  
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-STRIPE_SECRET_KEY=your_stripe_secret_key
-EMAIL_USER=your_email_address
-EMAIL_PASS=your_email_password
+ - PORT=5000
+- MONGO_URI=your_mongodb_connection_string
+- STRIPE_SECRET_KEY=your_stripe_secret_key
+- EMAIL_USER=your_email_address
+- EMAIL_PASS=your_email_password
 
 
  4. Run the App Locally
-
 
 # Run backend server
 cd backend &
