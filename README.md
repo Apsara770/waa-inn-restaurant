@@ -31,6 +31,7 @@ Tech Stack
 Waa Inn/
 │
 ├── frondend/           # React frontend
+|
 ├── backend/            # Node.js backend API
 │   ├── routes/
 │   ├── controllers/
@@ -38,8 +39,11 @@ Waa Inn/
 │   ├── config/
 │   ├── utils/
 │   └── invoices/
+|
 ├── admin/              # Admin panel (React or template)
+|
 ├── .env                # Environment variables (excluded)
+|
 ├── README.md
 
 
@@ -48,7 +52,6 @@ Waa Inn/
  1. Clone the Repository
 
      git clone https://github.com/Apsara770/waa-inn-restaurant.git
-     cd waa-inn-restaurant
 
 
  2. Install Dependencies
