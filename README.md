@@ -47,9 +47,8 @@ Waa Inn/
 
  1. Clone the Repository
 
-
-git clone https://github.com/Apsara770/waa-inn-restaurant.git
-cd waa-inn-restaurant
+     git clone https://github.com/Apsara770/waa-inn-restaurant.git
+     cd waa-inn-restaurant
 
 
  2. Install Dependencies
@@ -114,7 +113,7 @@ npm run dev
 
  Author
 
-Sandamini Weerasekara  
+  Sandamini Weerasekara  
   sandaminiweerasekara9@gmail.com  
   [GitHub](https://github.com/Apsara770)
 
